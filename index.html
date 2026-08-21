@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My To-Do List</title>
+    <button id="darkModeBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+    <p id="taskCount">Tasks: 0</p>
+    <p id="completedCount">Completed: 0</p>
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+    <div id="filterButtons">
+    <button onclick="filterTasks('all')">All</button>
+    <button onclick="filterTasks('pending')">Pending</button>
+    <button onclick="filterTasks('completed')">Completed</button>
+</div>
+   <button onclick="clearTasks()">Clear All</button>
+    <script src="todo.js"></script>
+</body>
+</html>
